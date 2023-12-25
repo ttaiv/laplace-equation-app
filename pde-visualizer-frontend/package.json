@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stdlib/array-linspace": "^0.1.0",
     "katex": "^0.16.9",
     "next": "14.0.4",
     "plotly.js": "^2.27.1",
