@@ -3,7 +3,7 @@ import linspace from '@stdlib/array-linspace'
 
 // Function to calcuate length of a vector, given x and y components
 const vectorLength = (...args: number[]) => {
-  return Math.sqrt(args.reduce((sum, val) => sum + val * val, 0));
+  return Math.sqrt(args.reduce((sum, val) => sum + val * val, 0))
 }
 
 // Functions to calculate value of fundamental solution of Laplace's equation at one point

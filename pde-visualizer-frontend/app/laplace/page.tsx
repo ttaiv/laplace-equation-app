@@ -29,15 +29,14 @@ const Solution3D = async () => {
 const LaplacePage = () => {
   return (
     <div>
-      <div>
-        <h1>The Laplace Equation</h1>
-        <InlineMath>{String.raw`\nabla^2 u = 0`}</InlineMath>
-      </div>
-      <div>
+        <h1>
+          The Laplace equation 
+          <div style={{display: 'inline-block', width: '10px'}}></div>
+          <InlineMath>{String.raw`\nabla^2 u = 0`}</InlineMath>
+        </h1>
         <h2>The fundamental solution</h2>
         <Solution2D />
         <Solution3D />
-      </div>
     </div>
   )
 }
