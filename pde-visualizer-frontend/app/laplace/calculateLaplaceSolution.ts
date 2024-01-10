@@ -1,4 +1,3 @@
-'use server'
 import linspace from '@stdlib/array-linspace'
 
 // Function to calcuate length of a vector, given x and y components
@@ -18,19 +17,18 @@ const phi3D = (x: number, y: number, z: number) => {
   return 1/(4*Math.PI) * 1/r
 }
 
-export const CalculateLaplaceSolution2D = async (size: number): Promise<{ x: number[], y: number[], z: number[][] }> => {
-  const x = Array.from(linspace(-size, size, 100))
-  const y = Array.from(linspace(-size, size, 100))
+export const CalculateLaplaceSolution2D = (size: number): { x: number[], y: number[], z: number[][] } => {
+  const x = Array.from(linspace(-size, size, 50))
+  const y = Array.from(linspace(-size, size, 50))
 
   const z = x.map((xVal) => y.map((yVal) => phi2D(xVal, yVal)))
 
-  return Promise.resolve({ x, y, z })
+  return { x, y, z }
 }
 
 // Calculates solution u, it is flattened to a 1D array
 // Also returns compatible x, y and z arrays
-export const CalculateLaplaceSolution3D = 
-  async (size: number,): Promise<{ x: number[], y: number[], z: number[], u: number[] }> => {
+export const CalculateLaplaceSolution3D = (size: number): { x: number[], y: number[], z: number[], u: number[] } => {
   const axis = Array.from(linspace(-size, size, 5)) // x, y and z axis are the same
   const n = axis.length
   const u = Array(axis.length * axis.length * axis.length)
@@ -52,5 +50,5 @@ export const CalculateLaplaceSolution3D =
       }
     }
   }
-  return Promise.resolve({ x, y, z, u })
+  return { x, y, z, u }
 }
