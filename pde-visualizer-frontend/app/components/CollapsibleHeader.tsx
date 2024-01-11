@@ -1,7 +1,7 @@
 import { ReactNode, useState } from 'react'
 
-const CollapsibleHeader = ({ title, children }: { title: String, children: ReactNode }) => {
-  const [show, setShow] = useState(false)
+const CollapsibleHeader = ({ title, children, showInitially }: { title: String, children: ReactNode, showInitially: Boolean }) => {
+  const [show, setShow] = useState(showInitially)
 
   return (
     <div>

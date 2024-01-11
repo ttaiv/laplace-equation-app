@@ -15,7 +15,8 @@ const LaplacePage = () => {
           <div style={{display: 'inline-block', width: '10px'}}></div>
           <InlineMath>{String.raw`\nabla^2 u = 0`}</InlineMath>
         </h1>
-        <CollapsibleHeader title='Fundamental solution'>
+        <CollapsibleHeader title='Introduction' showInitially={true}> </CollapsibleHeader>
+        <CollapsibleHeader title='Fundamental solution' showInitially={false}>
           <div>
             <p> The fundamental solution of the Laplace equation is given by: </p>
             <p><InlineMath>{String.raw`\Phi(x) = -\frac{1}{2\pi}\ln\left| x \right|`}</InlineMath> in two dimension, </p>
@@ -24,6 +25,7 @@ const LaplacePage = () => {
             <Visualizer />
           </div>
         </CollapsibleHeader>
+        <CollapsibleHeader title='External links' showInitially={false}> </CollapsibleHeader>
     </div>
   )
 }
