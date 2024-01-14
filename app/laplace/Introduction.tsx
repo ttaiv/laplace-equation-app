@@ -10,14 +10,26 @@ const Introduction = () => (
     <p> Solutions <InlineMath>{'u = u(x,y,z)'}</InlineMath> to the Laplace equation are called harmonic functions,  which are important in multiple branches of physics. </p>
     <p> Solutions are also incompressible gradient flow fields, having both zero divergence and zero curl.</p>
     <br />
-    <p> Laplace&apos;s comes up in the following physical systems</p>
+    <p> Laplace&apos;s comes up for example in the following physical systems</p>
     <ul>
-      <li> Steady-state heat conduction </li>
+      <li> 
+        Steady-state heat conduction
+        <ul>
+          <li>If u is temperature, Laplace&apos;s equation is known as Fourier&apos;s law of heat conduction. </li>
+          <li>
+            <InlineMath>{'u = u(x)'}</InlineMath> describes temperature distribution that does not change in time. <br />
+            Example: the steady state temperature distribution in a metal plate with no external heat source. <br />
+            NOTE: x is a vector (a list of coordinates) in this case.
+          </li>
+        </ul>
+      </li>
       <li> Electrostatics </li>
-      <li> Fluid flow </li>
-      <li> Diffusion </li>
-      <li> Image inpainting </li>
-      <li> Image denoising </li>
+        <ul>
+          <li>If u is electrostatic potential, Laplace&apos;s equation is known as Ohm&apos;s law of electrical conduction. </li>
+          <li>
+            <InlineMath>{'u = u(x)'}</InlineMath> describes the electric potential in a region with no electric charges.
+          </li>
+        </ul>
     </ul>
   </div>
 )

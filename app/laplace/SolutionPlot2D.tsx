@@ -24,6 +24,7 @@ const SolutionPlot2D = () => {
       {solution === null ? <p>Calculating...</p> 
         : <ContourPlot x={solution.x} y={solution.y} z={solution.z} title='The fundamental solution of Laplace equation, n=2' />
       }
+    <p> Physical interpretation can be found under 3D plot. </p>
     </div>
   )
 }
