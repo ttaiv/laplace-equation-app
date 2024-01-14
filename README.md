@@ -1,5 +1,5 @@
 # Laplace's equation app
-This is a small interactive app for learning a few properties of Laplace's equation and visualizing its fundamental solution.
+This is a small interactive app for learning some basics of Laplace's equation and visualizing its fundamental solution.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
