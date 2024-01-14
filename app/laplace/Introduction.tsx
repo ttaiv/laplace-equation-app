@@ -15,7 +15,7 @@ const Introduction = () => (
       <li> 
         Steady-state heat conduction
         <ul>
-          <li>If u is temperature, Laplace&apos;s equation is known as Fourier&apos;s law of heat conduction. </li>
+          <li>u is temperature and Laplace&apos;s equation is known as Fourier&apos;s law of heat conduction. </li>
           <li>
             <InlineMath>{'u = u(x)'}</InlineMath> describes temperature distribution that does not change in time. <br />
             Example: the steady state temperature distribution in a metal plate with no external heat source. <br />
@@ -23,13 +23,26 @@ const Introduction = () => (
           </li>
         </ul>
       </li>
-      <li> Electrostatics </li>
+      <li> Electrostatics
         <ul>
-          <li>If u is electrostatic potential, Laplace&apos;s equation is known as Ohm&apos;s law of electrical conduction. </li>
+          <li>u is electrostatic potential away from point charges
+            {'-->'} u satisfies Laplace&apos;s equation.
+          </li>
           <li>
-            <InlineMath>{'u = u(x)'}</InlineMath> describes the electric potential in a region with no electric charges.
+            Furthermore, <InlineMath>{'\\vec{E} = -\\nabla u'}</InlineMath> gives induced electric field.
           </li>
         </ul>
+      </li>
+      <li> Gravitation
+        <ul>
+          <li>u is gravitational potential away from point masses, for example in solar system far away from planets. <br />
+            {'-->'} u satisfies Laplace&apos;s equation.
+          </li>
+          <li>
+            Furthermore, <InlineMath>{'\\vec{F} = -\\nabla u'}</InlineMath> gives gravitation field.
+          </li>
+        </ul>
+      </li>
     </ul>
   </div>
 )
