@@ -9,7 +9,6 @@ const Introduction = () => (
     <BlockMath>{String.raw`\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} = 0`}</BlockMath>
     <p> Solutions <InlineMath>{'u = u(x,y,z)'}</InlineMath> to the Laplace equation are called harmonic functions,  which are important in multiple branches of physics. </p>
     <p> Solutions are also incompressible gradient flow fields, having both zero divergence and zero curl.</p>
-    <br />
     <p> Laplace&apos;s comes up for example in the following physical systems</p>
     <ul>
       <li> 
@@ -25,7 +24,7 @@ const Introduction = () => (
       </li>
       <li> Electrostatics
         <ul>
-          <li>u is electrostatic potential away from point charges
+          <li>u is electrostatic potential away from point charges <br />
             {'-->'} u satisfies Laplace&apos;s equation.
           </li>
           <li>

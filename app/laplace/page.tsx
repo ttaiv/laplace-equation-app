@@ -22,7 +22,7 @@ const LaplacePage = () => {
       <CollapsibleHeader title='External links' showInitially={false}>
         <ul>
           <li>
-            <a href='https://youtu.be/nmvs0vrBT18?si=x8IlwLI1fVEjZ-Py'>YouTube video </a>
+            Great <a href='https://youtu.be/nmvs0vrBT18?si=x8IlwLI1fVEjZ-Py'>YouTube video </a>
             by Steve Brunton about Laplace&apos;s equation and Poisson&apos;s equation.
           </li>
           <li>
