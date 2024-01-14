@@ -7,24 +7,27 @@ const Introduction = () => (
     <p> <InlineMath>{'\\nabla^2 = \\nabla \\cdot \\nabla = \\Delta'}</InlineMath> is the Laplace operator. </p>
     <p> Writing the Laplace operator explicitly, in three dimensions and rectangular coordinates the Laplace eauation takes the form </p>
     <BlockMath>{String.raw`\frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} = 0`}</BlockMath>
-    <p> Solutions <InlineMath>{'u = u(x,y,z)'}</InlineMath> to the Laplace equation are called harmonic functions,  which are important in multiple branches of physics. </p>
-    <p> Solutions are also incompressible gradient flow fields, having both zero divergence and zero curl.</p>
-    <p> Laplace&apos;s comes up for example in the following physical systems</p>
+    <p> Solutions <InlineMath>{'u = u(x,y,z)'}</InlineMath> to the Laplace equation are called harmonic functions, which are important in multiple branches of physics. </p>
+    <p> 
+      Solutions are also incompressible gradient flow fields, 
+      having both zero divergence (<InlineMath>{'\\nabla \\cdot u = 0'}</InlineMath>) and zero curl (<InlineMath>{'\\nabla \\times u = 0'}</InlineMath>).
+    </p>
+    <p> Laplace&apos;s equation comes up for example in the following physical systems:</p>
     <ul>
       <li> 
         Steady-state heat conduction
         <ul>
-          <li>u is temperature and Laplace&apos;s equation is known as Fourier&apos;s law of heat conduction. </li>
+          <li>u describes temperature distribution that does not change in time <br />
+            {'-->'} u satisfies Laplace&apos;s equation, which is known as Fourier&apos;s law of heat conduction in this context. </li>
           <li>
-            <InlineMath>{'u = u(x)'}</InlineMath> describes temperature distribution that does not change in time. <br />
-            Example: the steady state temperature distribution in a metal plate with no external heat source. <br />
-            NOTE: x is a vector (a list of coordinates) in this case.
+            Example: the temperature distribution in a metal plate with no external 
+            heat source when enough time has elapsed so that an equilibrium has been reached (the system is at &quot;steady state&quot;).
           </li>
         </ul>
       </li>
       <li> Electrostatics
         <ul>
-          <li>u is electrostatic potential away from point charges <br />
+          <li>u describes electrostatic potential away from point charges <br />
             {'-->'} u satisfies Laplace&apos;s equation.
           </li>
           <li>
@@ -34,7 +37,7 @@ const Introduction = () => (
       </li>
       <li> Gravitation
         <ul>
-          <li>u is gravitational potential away from point masses, for example in solar system far away from planets. <br />
+          <li>u describes gravitational potential away from point masses, for example in the solar system far away from planets. <br />
             {'-->'} u satisfies Laplace&apos;s equation.
           </li>
           <li>

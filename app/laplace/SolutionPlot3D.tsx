@@ -7,7 +7,7 @@ const SolutionPlot3D = () => {
     <div>
       <Scatter3DPlot x={x} y={y} z={z} u={u} title='The fundamental solution of Laplace equation, n=3' />
       <p>3D plot is a bit harder to interpret than 2D plot. <br />
-      Important is that the value (color of the point that can be for example temperature or potential)
+      Important is that the value (color of the point that can be for example temperature or potential) of the solution
       is smaller the further away from the origin. <br />
       When thinking in terms of potential, fundamental solution is the potential induced by a point charge placed at origin.<br />
       Solution is not defined at the origin and is plotted as zero there. <br  />
