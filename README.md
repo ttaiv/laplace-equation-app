@@ -9,7 +9,7 @@ Install dependencies:
 npm install
 ```
 
-Run the development server (performance can be bad):
+Run the development server (compiling routes can take some time):
 
 ```bash
 npm run dev
